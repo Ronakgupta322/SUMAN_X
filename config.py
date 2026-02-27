@@ -37,6 +37,11 @@ class Config:
             url for url in getenv("COOKIES_URL", "").split(" ")
             if url and "batbin.me" in url
         ]
+        # Vars For API End Pont.
+        YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## 
+        YT_API_KEY = getenv("YT_API_KEY" , 'xbit_jzg_Au1q227BlDvNsBfYVR9UWlW8mzA7') 
+        COOKIES_URL=getenv("COOKIES_URL" , "https://gist.githubusercontent.com/sparrow9616/f29fc6588086a3c72d92dd9c03773350/raw/4229f3f4aab4a6693fc0794d136d30f54d67ae85/gistfile1.txt")
+
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
         self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/haagg2.png")
         self.START_IMG = getenv("START_IMG", "https://files.catbox.moe/zvziwk.jpg")
